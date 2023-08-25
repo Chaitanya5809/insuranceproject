@@ -54,6 +54,7 @@ public class homeController {
 		m.addAttribute("NewUser", new User());
 		return "register";
 	}
+	
 	@PostMapping("/register")
 	public String DOreg(User NewUser) {
 		User Newus=userservice.registerUser(NewUser);
